@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/next/-/next-13.5.4.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141517:19)
+      at Object.onceWrapper (node:events:632:28)
+      at ClientRequest.emit (node:events:518:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:840:9)
+      at Object.onceWrapper (node:events:632:28)
+      at TLSSocket.emit (node:events:530:35)
+      at Socket._onTimeout (node:net:589:8)
+      at listOnTimeout (node:internal/timers:573:17)
+      at process.processTimers (node:internal/timers:514:7)
+
+npm manifest: 
+  {
+    "name": "acme-lease",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@apollo/client": "^3.8.0-rc.2",
+      "@apollo/experimental-nextjs-app-support": "^0.4.3",
+      "classnames": "^2.3.2",
+      "graphql": "^16.8.1",
+      "next": "13.5.4",
+      "react": "^18",
+      "react-dom": "^18"
+    },
+    "devDependencies": {
+      "@types/node": "^20.8.2",
+      "@types/react": "^18.2.25",
+      "autoprefixer": "^10",
+      "postcss": "^8",
+      "tailwindcss": "^3",
+      "typescript": "^5.2.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
